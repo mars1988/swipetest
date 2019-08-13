@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Node Version
+v8.11.3
 
 ## Available Scripts
 
