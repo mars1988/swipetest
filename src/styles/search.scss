@@ -1,0 +1,44 @@
+@import './styles/global.scss';
+
+.search {
+    background: $summer-sky;
+
+    &__inner {
+        @include sq-flexbox();
+        @include sq-justify-content(space-between);
+        @include sq-align-content(center);
+        max-width: pxToRem($max-width);
+        flex-flow: row wrap;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+
+        form {
+            height: 100%;
+            width: 100%;
+            padding: 0 pxToRem(20);
+
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $tablet){
+
+    .search {
+
+        form {
+            max-width: pxToRem(400);
+            padding: 0;
+        }
+    }
+}
